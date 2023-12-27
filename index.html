@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- CSS only -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ <link rel="stylesheet" href="style.css">
+ <title>Ai Pitching Tool</title>
+ 
+</head>
+<body>
+ 
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div id="mySidebar" class="sidebar">
+   <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> -->
+   <h1 class="headline">The Ai4innovation toolkit</h1>
+   <hr>
+   <a href="#">📡 Alignment</a>
+   <a href="#">Build Market Understanding(23)</a>
+   <a href="#">Clarify objectives(10)</a>
+   <a href="#">Write a TRUE North(App)</a>
+   
+   <a href="#">💻 Build Ideas</a>
+   <hr>
+   <a href="#">Clarify Challenge (30)</a>
+   <a href="#">Build Ideas (76)</a>
+   <a href="#">Select winning concepts (App-in development)</a>
+   <hr>
+   <a href="#">💬 Communicate and Check</a>
+   <a href="#">Improve selling concept (26)</a>
+   <a href="#">Check Ideas (6)</a>
+   <a href="#">Kills or continue (App-in development)</a>
+   <hr>
+   <a href="#">🔮 Systematically Improve</a>
+   <a href="#">Business Analysis (24)</a>
+   <a href="#">Kill or continue (App-in development)</a>
+   <hr>
+   <a href="#">📊&nbsp;Pitch</a>
+   <a href="#">Pitch Ideas (7)</a>
+   <a href="#">Pitch Template (App)</a>
+   <a href="#">Pitching Ideas (App)</a>
+   <a href="#">Business Review (App-in development)</a>
+ </div>
+ 
+</div>
+
+
+   <!-- <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button> -->
+   <div class="col-md-9">
+    <div class="hero-title">
+        <h1 class="h1"><strong>The Ai4innovation toolkit</strong></h1>
+    </div>
+   
+
+<p class="paragraph subtitle">
+    212 AI tools/methods and 3 existing apps to help you step by step through the ABCs of Innovation. (note: 3 apps in development)
+</p>
+
+<hr>
+
+<form action="/generate_responses" method="post">
+
+    
+    <div class="div-block-4">
+        <label for="userInput1" class="paragraph">Why is this pitch important to you?</label>
+        <input type="text" id="userInput1" class="text-field w-input" placeholder="We want to help people grow, coaches and their coachees. Be perceived as the coaching platform in Europe." required="">
+
+        <label for="Our-Business" class="input-instruction">What is the goal of your pitch?</label>
+       
+        <input type="text" id="userInput1" class="text-field w-input" placeholder="We want to help people grow, coaches and their coachees. Be perceived as the coaching platform in Europe." required="">
+
+        <label for="userInput2" class="input-instruction">What should your audience  believe after the pitch?      (and Why)</label>
+        <input type="text" id="userInput2" class="text-field w-input" placeholder="Our project mission is we want to help people grow, coaches and their coaches" required="">
+    </div>
+    <div class="col-6">
+        <div class="div-block-5">
+            <label for="userInput3" class="paragraph">In one line, what is your pitch? 
+                (this is usually your opening)</label>
+                <input type="text" id="userInput1" class="text-field w-input" placeholder="We want to help people grow, coaches and their coachees. Be perceived as the coaching platform in Europe." required="">
+             <br>
+            <label for="Alt-view" class="input-instruction">Up to 3 supporting arguments </label>
+            <input type="text" id="userInput3" class="text-field w-input" maxlength="256" placeholder="Write an alternate view" required="">
+<!-- 
+            <label for="Alt-view" class="input-instruction">Motivation</label>
+            <input type="text" id="userInput4" class="text-field w-input" maxlength="256" placeholder="Write your motivation" required="">
+
+            <label for="Alt-view" class="input-instruction">Expected Outcome</label>
+            <input type="text" id="userInput5" class="text-field w-input" maxlength="256" placeholder="Write your expected outcome" required=""> -->
+        </div>
+<button class="submit-button w-button" onclick="getResponse()">Get Feedback</button>
+<!-- <button class="export-button w-button" onclick="">Export</button> -->
+</form>
+
+<br/>
+<br/>
+<div class="card mb-3">
+    <div class="card-body">
+        <h5 class="card-title">Response 1</h5>
+        <p class="card-text">We are creating your request. This can take up to 20 seconds...</p>
+    </div>
+</div>
+    </div>
+  
+<!--   -->
+
+<!-- Rest of your HTML goes here -->
+  
+</div>
+</div>
+
+
+
+ <!-- JS, Popper.js, and jQuery -->
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ <!-- <script>
+   function openNav() {
+     document.getElementById("mySidebar").style.width = "250px";
+     document.getElementById("main").style.marginLeft = "250px";
+   }
+
+   function closeNav() {
+     document.getElementById("mySidebar").style.width = "0";
+     document.getElementById("main").style.marginLeft= "0";
+   }
+ </script> -->
+</body>
+</html>
